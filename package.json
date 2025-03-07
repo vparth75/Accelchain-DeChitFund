@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@cred/neopop-web": "^1.0.0",
     "@tailwindcss/vite": "^4.0.9",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "styled-components": "^5.3.11",
     "tailwindcss": "^4.0.9"
   },
   "devDependencies": {

@@ -9,13 +9,13 @@ const features = [
 
 const WhyUs: React.FC = () => {
   return (
-    <section className="py-16 bg-white text-center">
-      <h2 className="text-3xl font-bold mb-6">Why Choose Us?</h2>
+    <section className="py-16 text-center">
+      <h2 className="text-3xl font-bold mb-16 text-white font-title">Why Choose Us?</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
         {features.map((feature, index) => (
           <div key={index} className="p-6 bg-gray-100 shadow-lg rounded-lg">
-            <h3 className="text-xl font-semibold">{feature.title}</h3>
-            <p className="mt-2 text-gray-700">{feature.description}</p>
+            <h3 className="text-xl font-semibold font-title">{feature.title}</h3>
+            <p className="mt-2 text-gray-700 font-main">{feature.description}</p>
           </div>
         ))}
       </div>
