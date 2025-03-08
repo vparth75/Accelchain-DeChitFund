@@ -1,32 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
-import {
-    WalletModalProvider,
-    WalletDisconnectButton,
-    WalletMultiButton
-} from '@solana/wallet-adapter-react-ui';
-import '@solana/wallet-adapter-react-ui/styles.css';
-function Connectwallet(){
-  return (
-    <div>
-      <ConnectionProvider endpoint={"https://api.devnet.solana.com"}>
-        <WalletProvider wallets={[]} autoConnect>
-            <WalletModalProvider>
-              <div style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                padding: 20
-              }}>
-                <WalletMultiButton />
-                <WalletDisconnectButton />
-              </div>
-            </WalletModalProvider>
-        </WalletProvider>
-      </ConnectionProvider>
-    </div>
-  )
-}
+
 
 
 const Navbar: React.FC = () => {
@@ -72,7 +46,7 @@ const Navbar: React.FC = () => {
             { name: "Home", id: "home" },
             { name: "How it Works?", id: "how-it-works" },
             { name: "Why Us?", id: "why-us" },
-            { name: "Contact Us", id: "contact" },
+          
           ].map((item) => (
             <Link
               key={item.id}
@@ -91,9 +65,7 @@ const Navbar: React.FC = () => {
             </Link>
           ))}
 
-          <button >
-            <Connectwallet></Connectwallet>
-          </button>
+          
         </div>
       </div>
     </nav>
