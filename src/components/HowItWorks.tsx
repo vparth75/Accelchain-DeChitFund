@@ -9,7 +9,7 @@ const steps = [
 
 const HowItWorks: React.FC = () => {
   return (
-    <section className="pb-16 text-center">
+    <div className="pb-16 text-center">
       <h2 className="text-3xl font-bold mb-16 text-white font-title">How It Works?</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
         {steps.map((step, index) => (
@@ -19,7 +19,7 @@ const HowItWorks: React.FC = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

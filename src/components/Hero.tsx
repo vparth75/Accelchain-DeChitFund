@@ -1,6 +1,6 @@
 import React from "react";
 import HeroImage1 from "../assets/HeroImage1.svg"
-import { Button } from '@cred/neopop-web/lib/components';
+import { Button } from '@/components/ui/button';
 
 const Hero: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col items-center gap-10  justify-center">
           <p className="mt-4 text-lg font-main ">Join a decentralized chit fund powered by blockchain for complete security, transparency, and automation. Smart contracts handle fund collection and payouts seamlessly, ensuring trust and fairness without intermediaries. Save, invest, or borrow with confidence—experience a modern, efficient way to manage your funds!</p>
           <div>
-            <Button variant="primary" kind="elevated" size="medium" colorMode="light" showArrow>
+            <Button variant="secondary">
               Join the Beta
             </Button>
           </div>
